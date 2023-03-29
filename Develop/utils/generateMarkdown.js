@@ -91,13 +91,13 @@ function generateMarkdown(response) {
   ${response.desc}
 
   ## Contents
-  -[Description](#Description)
-  -[Install](#Install)
-  -[Usage Info](#Usage)
-  -[Contribution](#Contribution)
-  -[Questions](#Questions)
-  -[Tests](#Tests)
-  -[License](#License)
+  -[Description](#Description)  
+  -[Install](#Install)  
+  -[Usage Info](#Usage)  
+  -[Contribution](#Contribution)  
+  -[Questions](#Questions)  
+  -[Tests](#Tests)  
+  -[License](#License)  
 
   ## <span id=Install> Install </span>
   ${response.install}
@@ -106,19 +106,19 @@ function generateMarkdown(response) {
   ${response.usage}
 
   ## <span id=Contribution> Contribution </span>
-  Created by ${response.name}
-  See github to contribute or report bugs ${response.github}
+  Created by ${response.name}  
+  See github to contribute or report bugs: https://github.com/${response.github}
 
   ## <span id=Questions> Questions </span>
-  For issues or feature requests: ${response.github}
+  For issues or feature requests: https://github.com/${response.github}  
   For other questions, please email me: ${response.email}
 
   ## <span id=Tests> Tests </span>
   ${response.test}
 
   ## <span id=License> License </span>
-  ${response.license}
-  ${renderLicenseLink(response)}
+  ${response.license}  
+  ${renderLicenseLink(response)}  
   ${renderLicenseSection(response)}
 `;
 }
