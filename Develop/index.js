@@ -80,7 +80,7 @@ function writeToFile(fileName, response) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((data) => {
-    console.log(data);
+    // console.log(data);
     writeToFile("ReadMe.md", data);
   });
 }
