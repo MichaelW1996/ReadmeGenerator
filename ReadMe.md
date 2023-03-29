@@ -1,6 +1,6 @@
 # Readme Generator [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
-  ##Video of usage
+  ## Video of usage
   https://drive.google.com/file/d/1ZwQb3kT_0m2YK42-1T6s_cUyX6B3X4Jj/view 
   ## <span id=Description> Description </span>
   Creation of documentation for projects with only minor input from the user
