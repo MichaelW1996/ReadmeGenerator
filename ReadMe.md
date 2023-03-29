@@ -1,10 +1,7 @@
 # Readme Generator [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-  ## Link to video of usage
-  https://drive.google.com/file/d/1ZwQb3kT_0m2YK42-1T6s_cUyX6B3X4Jj/view
-
   ## <span id=Description> Description </span>
-  Creating easy and quick documentation for my projects
+  Creation of documentation for projects with only minor input from the user
 
   ## Contents
   -[Description](#Description)  
@@ -16,10 +13,10 @@
   -[License](#License)  
 
   ## <span id=Install> Install </span>
-  use 'npm i' to install packages needed
+  use 'npm i' to install packages
 
   ## <span id=Usage> Usage </span>
-  use 'node index.js' to begin prompts, a readme will be generated following these questions
+  use 'node index.js' to start the prompts, once answered a readme will be generated
 
   ## <span id=Contribution> Contribution </span>
   Created by Michael Walters  
@@ -30,7 +27,7 @@
   For other questions, please email me: Michael1996walters@gmail.com
 
   ## <span id=Tests> Tests </span>
-  Enter a number of data points and observe them in the readme to ensure they match up
+  Enter data and observe if the readme contains the same data
 
   ## <span id=License> License </span>
   Apache  

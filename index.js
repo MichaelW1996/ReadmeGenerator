@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer"); //inquirer from npm
-const generateMarkdown = require("./utils/generateMarkdown");
-const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown"); //my own markdown constructor
+const fs = require("fs"); //fs from npm
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -61,27 +61,32 @@ const questions = [
   },
 ];
 
-//test to check questions
+//test to check questions for debugging
 // inquirer.prompt(questions).then((data) => {
 //   //ask questions
 //   console.log(data);
 // });
 
-// TODO: Create a function to write README file
+// TODO: Create a function to write README file.
+//inputs of the name for the file and the response from the inquirer
 function writeToFile(fileName, response) {
+  //readme contains the content of the readme document
   const readme = generateMarkdown(response);
+
   function terminalReply(error) {
-    const output = error ? "Error" : "Success";
+    // Print to terminal based on if an error appears
+    const output = error ? "Error" : "Success"; //if an error is thrown pass error to console, othwise pass Success
     console.log(output);
   }
-  fs.writeFile(fileName, readme, terminalReply);
+  fs.writeFile(fileName, readme, terminalReply); //write file with the name defined in function, with readme content then print to terminal
 }
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((data) => {
-    // console.log(data);
-    writeToFile("ReadMe.md", data);
+    //ask the questions, then take the reply (data)
+    // console.log(data); for debugging
+    writeToFile("ReadMe.md", data); // and feed it to the writeToFile function
   });
 }
 
